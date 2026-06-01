@@ -1,5 +1,7 @@
 import numpy as np
 from sentence_transformers import SentenceTransformer
+from typing import cast
+
 
 def embed(
     texts: list[str],
@@ -16,5 +18,7 @@ def embed(
         Array of embedding vectors of shape (n_texts, embedding_dim).
     """
     model = SentenceTransformer(model_name)
-    embeddings = model.encode(texts)
+    embeddings = model.encode(texts, convert_to_numpy=True)
+    # Tell mypy encode is returning a numpy array
+    embeddings = cast(np.ndarray, embeddings)
     return embeddings
