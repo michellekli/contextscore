@@ -21,7 +21,7 @@ Are there any inconsistencies in docs/design.md? Read only docs/design.md.
 
 ---
 
-Propose project scaffolding based on @docs/design.md in the style of https://github.com/michellekli/htmlsift/blob/develop/docs/architecture.md. Read only @docs/design.md 
+Propose project scaffolding based on @docs/design.md in the style of https://github.com/michellekli/htmlsift/blob/develop/docs/architecture.md. Read only @docs/design.md
 
 ---
 
