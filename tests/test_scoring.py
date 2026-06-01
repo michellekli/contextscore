@@ -1,5 +1,5 @@
 import numpy as np
-from contextscore.scoring import embed
+from src.contextscore.scoring import embed
 
 def test_embed_returns_expected_shape():
     texts = ["hello world", "goodbye"]
